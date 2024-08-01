@@ -31,7 +31,13 @@ public class Evento {
     private String pais;
     private String complemento;
     @ManyToOne
+    @JoinColumn(name="id_tipo")
     private Tipo tipo;
+
+
+
+    @ManyToOne
+    @JoinColumn(name ="id_endereco")
     private Endereco endereco;
     
 

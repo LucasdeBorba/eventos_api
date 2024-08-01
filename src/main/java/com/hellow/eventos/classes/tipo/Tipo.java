@@ -18,8 +18,8 @@ public class Tipo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-  private Integer id;
+    @Column(name="id")
+  private Integer id_tipo;
 
   private String descricao;
 
