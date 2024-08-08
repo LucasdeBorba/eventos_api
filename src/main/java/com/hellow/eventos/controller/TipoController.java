@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="tipo")
+
 public class TipoController {
 
     @Autowired
