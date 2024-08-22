@@ -1,5 +1,6 @@
 package com.hellow.eventos.classes.cliente;
 
+import com.hellow.eventos.classes.endereco.Endereco;
 import com.hellow.eventos.classes.tipo.Tipo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -30,7 +31,7 @@ public class Cliente {
 
     @ManyToOne
     @JoinColumn(name ="endereco_id")
-        private Integer endereco_id;
+        private Endereco endereco_id;
 
 
 

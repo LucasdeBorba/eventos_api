@@ -8,11 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path="Endereco")
+@RequestMapping(path="Evento")
 
-
-public class EnderecoController {
-
+public class MidiaController {
     @Autowired
     private com.hellow.eventos.classes.evento.EventoRepository EventoRepository;
 

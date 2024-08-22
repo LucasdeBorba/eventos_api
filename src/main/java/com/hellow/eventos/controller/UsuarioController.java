@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path="Endereco")
+@RequestMapping(path="Evento")
 
-
-public class EnderecoController {
+public class UsuarioController {
 
     @Autowired
     private com.hellow.eventos.classes.evento.EventoRepository EventoRepository;
@@ -27,7 +26,6 @@ public class EnderecoController {
         this.EventoRepository.save(evento);
         return evento.getTipo(
         );
-
 
     }
 }
